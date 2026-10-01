@@ -30,3 +30,19 @@ class GoldLabel(BaseModel):
 
     def is_present(self) -> bool:
         return len(self.spans) > 0
+
+
+class Chunk(BaseModel):
+    id: str
+    contract_id: str
+    start: int
+    end: int
+    text: str
+
+    def overlaps(self, span: Span) -> bool:
+        """True if the chunk shares at least one character with the span"""
+        return self.start < span.end and span.start < self.end
+
+    def contains(self, span: Span) -> bool:
+        """True if the whole span is into the chunk"""
+        return self.start <= span.start and span.end <= self.end
