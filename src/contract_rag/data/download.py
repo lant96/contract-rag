@@ -10,6 +10,7 @@ from pathlib import Path
 
 CUAD_URL = "https://github.com/The-Atticus-Project/cuad/raw/main/data.zip"
 CUAD_JSON_NAME = "CUADv1.json"
+TEST_JSON_NAME = "test.json"
 DEFAULT_RAW_DIR = Path("data/raw")
 
 
@@ -20,7 +21,8 @@ def download_cuad(dest_dir: Path = DEFAULT_RAW_DIR) -> Path:
 
     # Check if it is already downloaded
     json_path = dest_dir / CUAD_JSON_NAME
-    if json_path.exists():
+    test_path = dest_dir / TEST_JSON_NAME
+    if json_path.exists() and test_path.exists():
         return json_path
 
     # Temporary location for the ZIP file
@@ -33,6 +35,7 @@ def download_cuad(dest_dir: Path = DEFAULT_RAW_DIR) -> Path:
     # Extract JSON file
     with zipfile.ZipFile(zip_path) as zf:
         zf.extract(CUAD_JSON_NAME, dest_dir)
+        zf.extract(TEST_JSON_NAME, dest_dir)
 
     # Remove the temporary ZIP
     zip_path.unlink()
