@@ -46,3 +46,18 @@ class Chunk(BaseModel):
     def contains(self, span: Span) -> bool:
         """True if the whole span is into the chunk"""
         return self.start <= span.start and span.end <= self.end
+
+    def overlap_fraction(self, span: Span) -> float:
+        """Share of the span's characters that lie inside this chunk (0.0 to 1.0)."""
+        length = span.end - span.start
+        if length <= 0:
+            return 0.0
+        overlap = min(self.end, span.end) - max(self.start, span.start)
+        return max(0, overlap) / length
+
+
+class Hit(BaseModel):
+    """One search result: a chunk and how similar it is to the query (higher is better)."""
+
+    chunk: Chunk
+    score: float

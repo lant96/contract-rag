@@ -97,3 +97,33 @@ def chunk_by_paragraph(contract: Contract, max_size: int = 1500, overlap: int = 
     if current is not None:
         pieces.append(current)
     return make_chunks(contract, pieces)
+
+
+def chunk_paragraphs_alone(
+    contract: Contract, max_size: int = 1500, overlap: int = 200
+) -> list[Chunk]:
+    """Every paragraph becomes its own chunk (no merging).
+
+    A paragraph longer than `max_size` is cut into windows.
+    """
+    pieces = []
+    for start, end in find_paragraphs(contract.text):
+        if end - start > max_size:
+            pieces.extend(fixed_windows(contract.text, start, end, max_size, overlap))
+        else:
+            pieces.append((start, end))
+    return make_chunks(contract, pieces)
+
+
+CHUNKER_CONFIGS = {
+    "fixed_1000_200": (chunk_fixed, {"size": 1000, "overlap": 200}),
+    "fixed_1500_300": (chunk_fixed, {"size": 1500, "overlap": 300}),
+    "paragraph_1500": (chunk_by_paragraph, {"max_size": 1500, "overlap": 200}),
+    "paragraph_alone": (chunk_paragraphs_alone, {"max_size": 1500, "overlap": 200}),
+}
+
+
+def chunk_contract(contract: Contract, config_name: str) -> list[Chunk]:
+    """Chunk a contract using one of the named setups above."""
+    chunker, settings = CHUNKER_CONFIGS[config_name]
+    return chunker(contract, **settings)

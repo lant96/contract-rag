@@ -2,7 +2,12 @@ from pathlib import Path
 
 import pytest
 
-from contract_rag.chunking import chunk_by_paragraph, chunk_fixed, find_paragraphs
+from contract_rag.chunking import (
+    chunk_by_paragraph,
+    chunk_fixed,
+    chunk_paragraphs_alone,
+    find_paragraphs,
+)
 from contract_rag.data.download import CUAD_JSON_NAME
 from contract_rag.data.loader import load_contracts
 from contract_rag.schemas import Chunk, Contract, Span
@@ -85,6 +90,14 @@ def test_long_paragraph_is_cut() -> None:
     chunks = chunk_by_paragraph(Contract(id="c", text=text), max_size=300, overlap=50)
     assert len(chunks) > 1
     assert all(len(chunk.text) <= 300 for chunk in chunks)
+
+
+def test_paragraphs_alone_are_not_merged() -> None:
+    contract = Contract(id="c", text="aaa\n\nbbb\n\nccc")
+    chunks = chunk_paragraphs_alone(contract, max_size=100)
+    assert [chunk.text for chunk in chunks] == ["aaa", "bbb", "ccc"]
+    for chunk in chunks:
+        assert contract.text[chunk.start : chunk.end] == chunk.text
 
 
 def test_chunk_contains_and_overlaps_span() -> None:

@@ -1,6 +1,7 @@
 """Turn the raw CUAD JSON files into the models in schemas.py."""
 
 import json
+import random
 from pathlib import Path
 
 from contract_rag.clauses import CLAUSES
@@ -65,3 +66,9 @@ def split_contracts(contracts: list[Contract], test_ids: set):
     dev = [c for c in contracts if c.id not in test_ids]
     test = [c for c in contracts if c.id in test_ids]
     return dev, test
+
+
+def sample_contracts(contracts: list[Contract], n: int, seed: int = 42) -> list[Contract]:
+    """Pick n contracts at random. The same seed always gives the same contracts."""
+    rng = random.Random(seed)
+    return rng.sample(contracts, min(n, len(contracts)))
