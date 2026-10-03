@@ -1,6 +1,6 @@
 """Measure retrieval quality for one index and save the results.
 
-Examples (run from the project root; the contracts must already be in the index):
+Examples
     uv run python scripts/evaluate_retrieval.py --config paragraph_1500 --split dev --limit 50
     uv run python scripts/evaluate_retrieval.py --config paragraph_1500 --split test
 
@@ -44,6 +44,22 @@ def main() -> None:
     parser.add_argument("--config", required=True, choices=list(CHUNKER_CONFIGS))
     parser.add_argument("--split", required=True, choices=["dev", "test"])
     parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument(
+        "--questions",
+        default="v1",
+        choices=["v1", "v2", "both"],
+        help="which queries to use: v1, v2, or both sets together",
+    )
+    parser.add_argument(
+        "--fuse",
+        action="store_true",
+        help="search all queries of a clause together and combine their rankings",
+    )
+    parser.add_argument(
+        "--no-prefix",
+        action="store_true",
+        help="do not add the bge query instruction in front of the queries",
+    )
     args = parser.parse_args()
 
     path = download_cuad()
@@ -57,7 +73,8 @@ def main() -> None:
         chosen = sample_contracts(chosen, args.limit)
     contract_ids = [c.id for c in chosen]
 
-    index = ChunkIndex(INDEX_DIR, args.config, Embedder())
+    embedder = Embedder(query_prefix="") if args.no_prefix else Embedder()
+    index = ChunkIndex(INDEX_DIR, args.config, embedder)
     missing = []
     for contract in chosen:
         expected = len(chunk_contract(contract, args.config))
@@ -68,23 +85,41 @@ def main() -> None:
         print("Run build_index.py with the same --config, --split and --limit first.")
         return
 
-    rows = evaluate_retrieval(index, contract_ids, labels, CLAUSES)
+    clauses = CLAUSES
+    if args.questions == "v2":
+        clauses = [c.model_copy(update={"questions": c.questions_v2}) for c in CLAUSES]
+    elif args.questions == "both":
+        both = [c.model_copy(update={"questions": c.questions + c.questions_v2}) for c in CLAUSES]
+        clauses = both
+    rows = evaluate_retrieval(index, contract_ids, labels, clauses, fuse=args.fuse)
     overall = average(rows)
     per_clause = average_per_clause(rows)
 
+    prefix_text = "off" if args.no_prefix else "on"
     print(f"\nindex: {args.config} | split: {args.split} | contracts: {len(contract_ids)}")
+    print(f"questions: {args.questions} | query prefix: {prefix_text} | fused: {args.fuse}")
     print(f"{'':30s} {'n':>5s}  " + "  ".join(f"{m:>7s}" for m in METRICS))
     print_row("ALL", overall)
     for clause_key, scores in per_clause.items():
         print_row(clause_key, scores)
 
     RESULTS_DIR.mkdir(exist_ok=True)
-    out_path = RESULTS_DIR / f"retrieval_{args.split}_{args.config}.json"
+    suffix = ""
+    if args.questions != "v1":
+        suffix += f"_{args.questions}"
+    if args.no_prefix:
+        suffix += "_noprefix"
+    if args.fuse:
+        suffix += "_fused"
+    out_path = RESULTS_DIR / f"retrieval_{args.split}_{args.config}{suffix}.json"
     report = {
         "config": args.config,
         "split": args.split,
         "contracts": len(contract_ids),
         "embedding_model": MODEL_NAME,
+        "questions": args.questions,
+        "query_prefix": not args.no_prefix,
+        "fused": args.fuse,
         "overall": overall,
         "per_clause": per_clause,
         "rows": rows,
