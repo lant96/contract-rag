@@ -29,6 +29,7 @@ from contract_rag.evaluation import (
     evaluate_retrieval,
 )
 from contract_rag.index import ChunkIndex
+from contract_rag.paraphrases import PARAPHRASES
 from contract_rag.retrieval import MODES
 
 INDEX_DIR = Path("data/index")
@@ -48,8 +49,8 @@ def main() -> None:
     parser.add_argument(
         "--questions",
         default="v1",
-        choices=["v1", "v2", "both"],
-        help="which queries to use: v1, v2, or both sets together",
+        choices=["v1", "v2", "v3", "both"],
+        help="which queries to use: v1, v2, v3 (everyday-words paraphrases) or v1+v2",
     )
     parser.add_argument(
         "--retriever",
@@ -95,6 +96,8 @@ def main() -> None:
     clauses = CLAUSES
     if args.questions == "v2":
         clauses = [c.model_copy(update={"questions": c.questions_v2}) for c in CLAUSES]
+    elif args.questions == "v3":
+        clauses = [c.model_copy(update={"questions": PARAPHRASES[c.key]}) for c in CLAUSES]
     elif args.questions == "both":
         both = [c.model_copy(update={"questions": c.questions + c.questions_v2}) for c in CLAUSES]
         clauses = both
