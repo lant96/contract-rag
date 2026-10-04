@@ -1,8 +1,9 @@
 from pathlib import Path
 
 from contract_rag.clauses import ClauseSpec
-from contract_rag.evaluation import average, evaluate_retrieval, fuse_hits, score_query
+from contract_rag.evaluation import average, evaluate_retrieval, score_query
 from contract_rag.index import ChunkIndex
+from contract_rag.retrieval import fuse_hits
 from contract_rag.schemas import Chunk, GoldLabel, Hit, Span
 from fakes import FakeEmbedder
 

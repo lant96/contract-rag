@@ -2,12 +2,11 @@
 
 from contract_rag.clauses import ClauseSpec
 from contract_rag.index import ChunkIndex
+from contract_rag.retrieval import FUSION_DEPTH, Retriever, fuse_hits
 from contract_rag.schemas import GoldLabel, Hit, Span
 
 K_VALUES = [1, 3, 5]
 METRICS = ["hit@1", "hit@3", "hit@5", "recall@5", "mrr"]
-FUSION_DEPTH = 10  # how many chunks are taken from each query before combining them
-RRF_K = 60  # the usual constant of Reciprocal Rank Fusion
 
 
 def span_is_found(hits: list[Hit], span: Span, min_overlap: float) -> bool:
@@ -36,24 +35,6 @@ def score_query(hits: list[Hit], label: GoldLabel, min_overlap: float = 0.5) -> 
     return scores
 
 
-def fuse_hits(hit_lists: list[list[Hit]]) -> list[Hit]:
-    """Combine several rankings of the same contract into one (Reciprocal Rank Fusion).
-
-    Every chunk gets 1 / (RRF_K + rank) from each list it appears in, and the scores are
-    added up. A chunk that several queries rank highly ends up on top.
-    """
-    scores = {}  # chunk id -> fused score
-    chunks = {}  # chunk id -> the chunk itself
-    for hits in hit_lists:
-        for rank, hit in enumerate(hits, start=1):
-            chunk_id = hit.chunk.id
-            scores[chunk_id] = scores.get(chunk_id, 0.0) + 1 / (RRF_K + rank)
-            chunks[chunk_id] = hit.chunk
-
-    ordered_ids = sorted(scores, key=lambda chunk_id: scores[chunk_id], reverse=True)
-    return [Hit(chunk=chunks[chunk_id], score=scores[chunk_id]) for chunk_id in ordered_ids]
-
-
 def make_row(label: GoldLabel, question: str, hits: list[Hit], min_overlap: float) -> dict:
     """Score one query and add the information we want to keep about it."""
     row = score_query(hits, label, min_overlap)
@@ -70,6 +51,7 @@ def evaluate_retrieval(
     clauses: list[ClauseSpec],
     min_overlap: float = 0.5,
     fuse: bool = False,
+    mode: str = "dense",
 ) -> list[dict]:
     """Ask the questions of every clause on every contract where that clause exists.
 
@@ -77,9 +59,12 @@ def evaluate_retrieval(
     fuse=True all questions of a clause are searched together and their rankings are
     combined with fuse_hits (one row per contract and clause).
 
+    `mode` chooses the search method: "dense", "bm25" or "hybrid" (see Retriever).
+
     Contracts where the clause is absent are skipped, because there is nothing to find.
     """
     wanted = set(contract_ids)
+    retriever = Retriever(index, mode)
     clause_for_key = {clause.key: clause for clause in clauses}
 
     rows = []
@@ -89,13 +74,13 @@ def evaluate_retrieval(
         questions = clause_for_key[label.clause].questions
 
         if fuse:
-            hit_lists = [index.search(q, label.contract_id, k=FUSION_DEPTH) for q in questions]
+            hit_lists = [retriever.search(q, label.contract_id, k=FUSION_DEPTH) for q in questions]
             hits = fuse_hits(hit_lists)
             row = make_row(label, f"fused: {len(questions)} questions", hits, min_overlap)
             rows.append(row)
         else:
             for question in questions:
-                hits = index.search(question, label.contract_id, k=max(K_VALUES))
+                hits = retriever.search(question, label.contract_id, k=max(K_VALUES))
                 rows.append(make_row(label, question, hits, min_overlap))
     return rows
 

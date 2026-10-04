@@ -34,6 +34,29 @@ class ChunkIndex:
         found = self.collection.get(where={"contract_id": contract_id}, include=[])
         return len(found["ids"])
 
+    def get_chunks(self, contract_id: str) -> list[Chunk]:
+        """All stored chunks of one contract, in the order they appear in the contract."""
+        found = self.collection.get(
+            where={"contract_id": contract_id}, include=["documents", "metadatas"]
+        )
+        documents = found["documents"]
+        metadatas = found["metadatas"]
+        assert documents is not None
+        assert metadatas is not None
+
+        chunks = []
+        for i in range(len(found["ids"])):
+            chunk = Chunk(
+                id=found["ids"][i],
+                contract_id=contract_id,
+                start=cast(int, metadatas[i]["start"]),
+                end=cast(int, metadatas[i]["end"]),
+                text=documents[i],
+            )
+            chunks.append(chunk)
+        chunks.sort(key=lambda chunk: chunk.start)
+        return chunks
+
     def add_chunks(self, chunks: list[Chunk], batch_size: int = 64) -> None:
         """Embed the chunks and store them. Adding the same chunk twice just replaces it."""
         for i in range(0, len(chunks), batch_size):

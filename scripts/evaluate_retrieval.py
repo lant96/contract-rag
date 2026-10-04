@@ -29,6 +29,7 @@ from contract_rag.evaluation import (
     evaluate_retrieval,
 )
 from contract_rag.index import ChunkIndex
+from contract_rag.retrieval import MODES
 
 INDEX_DIR = Path("data/index")
 RESULTS_DIR = Path("results")
@@ -49,6 +50,12 @@ def main() -> None:
         default="v1",
         choices=["v1", "v2", "both"],
         help="which queries to use: v1, v2, or both sets together",
+    )
+    parser.add_argument(
+        "--retriever",
+        default="dense",
+        choices=MODES,
+        help="dense = vector search, bm25 = keyword search, hybrid = both combined",
     )
     parser.add_argument(
         "--fuse",
@@ -91,13 +98,16 @@ def main() -> None:
     elif args.questions == "both":
         both = [c.model_copy(update={"questions": c.questions + c.questions_v2}) for c in CLAUSES]
         clauses = both
-    rows = evaluate_retrieval(index, contract_ids, labels, clauses, fuse=args.fuse)
+    rows = evaluate_retrieval(
+        index, contract_ids, labels, clauses, fuse=args.fuse, mode=args.retriever
+    )
     overall = average(rows)
     per_clause = average_per_clause(rows)
 
     prefix_text = "off" if args.no_prefix else "on"
     print(f"\nindex: {args.config} | split: {args.split} | contracts: {len(contract_ids)}")
-    print(f"questions: {args.questions} | query prefix: {prefix_text} | fused: {args.fuse}")
+    print(f"retriever: {args.retriever} | questions: {args.questions} | fused: {args.fuse}")
+    print(f"query prefix: {prefix_text}")
     print(f"{'':30s} {'n':>5s}  " + "  ".join(f"{m:>7s}" for m in METRICS))
     print_row("ALL", overall)
     for clause_key, scores in per_clause.items():
@@ -109,6 +119,8 @@ def main() -> None:
         suffix += f"_{args.questions}"
     if args.no_prefix:
         suffix += "_noprefix"
+    if args.retriever != "dense":
+        suffix += f"_{args.retriever}"
     if args.fuse:
         suffix += "_fused"
     out_path = RESULTS_DIR / f"retrieval_{args.split}_{args.config}{suffix}.json"
@@ -119,6 +131,7 @@ def main() -> None:
         "embedding_model": MODEL_NAME,
         "questions": args.questions,
         "query_prefix": not args.no_prefix,
+        "retriever": args.retriever,
         "fused": args.fuse,
         "overall": overall,
         "per_clause": per_clause,
