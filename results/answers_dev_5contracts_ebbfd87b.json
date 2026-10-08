@@ -1,0 +1,1671 @@
+{
+  "split": "dev",
+  "contracts": [
+    "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+    "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+    "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+    "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+    "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement"
+  ],
+  "model": "openai/gpt-oss-120b",
+  "prompt_id": "ebbfd87b",
+  "complete": true,
+  "summary": {
+    "pairs": 40,
+    "present": 16,
+    "absent": 24,
+    "tp": 13,
+    "fp": 5,
+    "fn": 3,
+    "tn": 19,
+    "accuracy": 0.8,
+    "precision": 0.7222222222222222,
+    "recall": 0.8125,
+    "f1": 0.7647058823529411,
+    "false_found_rate": 0.20833333333333334,
+    "retrieval_ceiling": 0.875,
+    "evidence_hit_rate": 1.0,
+    "evidence_precision": 0.8461538461538461,
+    "failed_validation_rate": 0.025,
+    "retried_rate": 0.1,
+    "mean_prompt_tokens": 1918.525,
+    "mean_completion_tokens": 187.875
+  },
+  "rows": [
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "governing_law",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 1,
+      "prompt_tokens": 1670,
+      "completion_tokens": 157,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 1.0
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "termination_for_convenience",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1639,
+      "completion_tokens": 79,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "renewal_term",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1711,
+      "completion_tokens": 79,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "cap_on_liability",
+      "gold_present": true,
+      "found": false,
+      "correct": false,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1671,
+      "completion_tokens": 62,
+      "retrieval_hit": false,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "uncapped_liability",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1768,
+      "completion_tokens": 104,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "exclusivity",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 1,
+      "prompt_tokens": 1735,
+      "completion_tokens": 248,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 1.0
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "non_compete",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1759,
+      "completion_tokens": 109,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "anti_assignment",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 3,
+      "prompt_tokens": 1459,
+      "completion_tokens": 306,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 0.6666666666666666
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "governing_law",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 1,
+      "prompt_tokens": 1588,
+      "completion_tokens": 147,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 1.0
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "termination_for_convenience",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1579,
+      "completion_tokens": 83,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "renewal_term",
+      "gold_present": false,
+      "found": true,
+      "correct": false,
+      "status": "ok",
+      "n_quotes": 1,
+      "prompt_tokens": 1521,
+      "completion_tokens": 141,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "cap_on_liability",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "retried",
+      "n_quotes": 2,
+      "prompt_tokens": 3739,
+      "completion_tokens": 597,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 1.0
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "uncapped_liability",
+      "gold_present": false,
+      "found": true,
+      "correct": false,
+      "status": "ok",
+      "n_quotes": 1,
+      "prompt_tokens": 1653,
+      "completion_tokens": 307,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "exclusivity",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1536,
+      "completion_tokens": 71,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "non_compete",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1622,
+      "completion_tokens": 83,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "anti_assignment",
+      "gold_present": true,
+      "found": false,
+      "correct": false,
+      "status": "failed_validation",
+      "n_quotes": 0,
+      "prompt_tokens": 3374,
+      "completion_tokens": 593,
+      "retrieval_hit": true,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "governing_law",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 1,
+      "prompt_tokens": 1755,
+      "completion_tokens": 156,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 1.0
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "termination_for_convenience",
+      "gold_present": false,
+      "found": true,
+      "correct": false,
+      "status": "retried",
+      "n_quotes": 1,
+      "prompt_tokens": 3395,
+      "completion_tokens": 438,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "renewal_term",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "retried",
+      "n_quotes": 1,
+      "prompt_tokens": 3486,
+      "completion_tokens": 526,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 1.0
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "cap_on_liability",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1621,
+      "completion_tokens": 79,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "uncapped_liability",
+      "gold_present": false,
+      "found": true,
+      "correct": false,
+      "status": "retried",
+      "n_quotes": 2,
+      "prompt_tokens": 3897,
+      "completion_tokens": 648,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "exclusivity",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1632,
+      "completion_tokens": 78,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "non_compete",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1712,
+      "completion_tokens": 112,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "anti_assignment",
+      "gold_present": true,
+      "found": false,
+      "correct": false,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1435,
+      "completion_tokens": 77,
+      "retrieval_hit": false,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "governing_law",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 2,
+      "prompt_tokens": 1951,
+      "completion_tokens": 230,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 1.0
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "termination_for_convenience",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 1,
+      "prompt_tokens": 1663,
+      "completion_tokens": 201,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 1.0
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "renewal_term",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 2,
+      "prompt_tokens": 1665,
+      "completion_tokens": 244,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 0.5
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "cap_on_liability",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1670,
+      "completion_tokens": 77,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "uncapped_liability",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1679,
+      "completion_tokens": 58,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "exclusivity",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 2,
+      "prompt_tokens": 1971,
+      "completion_tokens": 279,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 0.5
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "non_compete",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1669,
+      "completion_tokens": 59,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "anti_assignment",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1960,
+      "completion_tokens": 68,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "governing_law",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 1,
+      "prompt_tokens": 1769,
+      "completion_tokens": 150,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 1.0
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "termination_for_convenience",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1799,
+      "completion_tokens": 72,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "renewal_term",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1623,
+      "completion_tokens": 52,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "cap_on_liability",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1691,
+      "completion_tokens": 55,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "uncapped_liability",
+      "gold_present": false,
+      "found": true,
+      "correct": false,
+      "status": "ok",
+      "n_quotes": 1,
+      "prompt_tokens": 1700,
+      "completion_tokens": 293,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "exclusivity",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1670,
+      "completion_tokens": 67,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "non_compete",
+      "gold_present": false,
+      "found": false,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 0,
+      "prompt_tokens": 1747,
+      "completion_tokens": 62,
+      "retrieval_hit": null,
+      "evidence_hit": null,
+      "evidence_precision": null
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "anti_assignment",
+      "gold_present": true,
+      "found": true,
+      "correct": true,
+      "status": "ok",
+      "n_quotes": 3,
+      "prompt_tokens": 1557,
+      "completion_tokens": 268,
+      "retrieval_hit": true,
+      "evidence_hit": true,
+      "evidence_precision": 0.3333333333333333
+    }
+  ],
+  "results": [
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "governing_law",
+      "found": true,
+      "summary": "The agreement states that it is governed by the laws of the State of California and that disputes will be heard in California courts.",
+      "evidence": [
+        {
+          "chunk_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::19",
+          "quote": "This Agreement shall be governed by, and construed in accordance with, the laws of the State of California without reference to its choice of law rules.",
+          "span": {
+            "start": 23496,
+            "end": 23648,
+            "text": "This Agreement shall be governed by, and construed in accordance with, the laws of the State of California without reference to its choice of law rules."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::19",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::11",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::21",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::16",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::20"
+      ],
+      "prompt_tokens": 1670,
+      "completion_tokens": 157,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "termination_for_convenience",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::10",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::9",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::16",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::15",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::11"
+      ],
+      "prompt_tokens": 1639,
+      "completion_tokens": 79,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "renewal_term",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::10",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::9",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::18",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::11",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::16"
+      ],
+      "prompt_tokens": 1711,
+      "completion_tokens": 79,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "cap_on_liability",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::11",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::22",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::8",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::15",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::12"
+      ],
+      "prompt_tokens": 1671,
+      "completion_tokens": 62,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "uncapped_liability",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::13",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::11",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::12",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::15",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::16"
+      ],
+      "prompt_tokens": 1768,
+      "completion_tokens": 104,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "exclusivity",
+      "found": true,
+      "summary": "Snap agrees not to allow any third party to sponsor products or services in the Exclusive Category on the Snap Web Site during the term.",
+      "evidence": [
+        {
+          "chunk_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::7",
+          "quote": "Snap will not grant any third party any right to sponsor any products or services in the Exclusive Category on or through the Snap Web Site.",
+          "span": {
+            "start": 9420,
+            "end": 9560,
+            "text": "Snap will not grant any third party any right to sponsor any products or services in the Exclusive Category on or through the Snap Web Site."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::18",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::11",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::16",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::1",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::7"
+      ],
+      "prompt_tokens": 1735,
+      "completion_tokens": 248,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "non_compete",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::16",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::18",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::11",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::7",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::13"
+      ],
+      "prompt_tokens": 1759,
+      "completion_tokens": 109,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+      "clause": "anti_assignment",
+      "found": true,
+      "summary": "The agreement requires each party to obtain the other party's prior written consent before assigning the contract or its rights, except for certain affiliates or successors.",
+      "evidence": [
+        {
+          "chunk_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::18",
+          "quote": "Neither party may assign this Agreement or any of its rights or delegate any of its duties under this Agreement without the prior written consent of the other party, not to be unreasonably withheld;",
+          "span": {
+            "start": 22731,
+            "end": 22929,
+            "text": "Neither party may assign this Agreement or any of its rights or delegate any of its duties under this Agreement without the prior written consent of the other party, not to be unreasonably withheld;"
+          }
+        },
+        {
+          "chunk_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::18",
+          "quote": "except that either party may, without the other party's consent, assign this Agreement or any of its rights or delegate any of its duties under this Agreement: (a) to any corporate affiliate of such party; or (b) to any purchaser of all or substantially all of such party's assets or to any successor by way of merger, consolidation or similar transaction.",
+          "span": {
+            "start": 22930,
+            "end": 23286,
+            "text": "except that either party may, without the other party's consent, assign this Agreement or any of its rights or delegate any of its duties under this Agreement: (a) to any corporate affiliate of such party; or (b) to any purchaser of all or substantially all of such party's assets or to any successor by way of merger, consolidation or similar transaction."
+          }
+        },
+        {
+          "chunk_id": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::18",
+          "quote": "Subject to the foregoing, this Agreement will be binding upon, enforceable by, and inure to the benefit of the parties and their respective successors and assigns.",
+          "span": {
+            "start": 23287,
+            "end": 23450,
+            "text": "Subject to the foregoing, this Agreement will be binding upon, enforceable by, and inure to the benefit of the parties and their respective successors and assigns."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::18",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::15",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::16",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::20",
+        "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement::9"
+      ],
+      "prompt_tokens": 1459,
+      "completion_tokens": 306,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "governing_law",
+      "found": true,
+      "summary": "The contract states that California law governs the agreement and any related legal actions.",
+      "evidence": [
+        {
+          "chunk_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::31",
+          "quote": "This Agreement, and all matters arising out of or relating to this Agreement, shall be governed by the laws of the State of California.",
+          "span": {
+            "start": 34071,
+            "end": 34206,
+            "text": "This Agreement, and all matters arising out of or relating to this Agreement, shall be governed by the laws of the State of California."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::31",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::32",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::7",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::33",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::22"
+      ],
+      "prompt_tokens": 1588,
+      "completion_tokens": 147,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "termination_for_convenience",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::29",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::30",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::32",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::31",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::33"
+      ],
+      "prompt_tokens": 1579,
+      "completion_tokens": 83,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "renewal_term",
+      "found": true,
+      "summary": "The agreement can be renewed for successive one\u2011year terms if the parties mutually agree in writing after the initial term.",
+      "evidence": [
+        {
+          "chunk_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::29",
+          "quote": "may be renewed for successive one (1) year terms pursuant to mutual written agreement of the parties",
+          "span": {
+            "start": 31226,
+            "end": 31326,
+            "text": "may be renewed for successive one (1) year terms pursuant to mutual written agreement of the parties"
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::29",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::30",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::32",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::33",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::4"
+      ],
+      "prompt_tokens": 1521,
+      "completion_tokens": 141,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "cap_on_liability",
+      "found": true,
+      "summary": "The agreement caps each party\u2019s liability, limiting E.Piphany\u2019s liability to the total payments made by HSNS during the initial term and excluding indirect, incidental, special, consequential, and lost\u2011profit damages.",
+      "evidence": [
+        {
+          "chunk_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::28",
+          "quote": "IN NO EVENT SHALL E.PIPHANY'S LIABILITY HEREUNDER EXCEED THE SUM TOTAL OF PAYMENTS MADE BY HSNS UNDER THE INITIAL TERM OF THIS AGREEMENT.",
+          "span": {
+            "start": 30686,
+            "end": 30823,
+            "text": "IN NO EVENT SHALL E.PIPHANY'S LIABILITY HEREUNDER EXCEED THE SUM TOTAL OF PAYMENTS MADE BY HSNS UNDER THE INITIAL TERM OF THIS AGREEMENT."
+          }
+        },
+        {
+          "chunk_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::28",
+          "quote": "IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOSS OF PROFITS, REVENUE, DATA OR USE, INCURRED BY THE OTHER PARTY OR ANY THIRD PARTY, WHETHER IN AN ACTION IN CONTRACT OR TORT, EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+          "span": {
+            "start": 30365,
+            "end": 30685,
+            "text": "IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOSS OF PROFITS, REVENUE, DATA OR USE, INCURRED BY THE OTHER PARTY OR ANY THIRD PARTY, WHETHER IN AN ACTION IN CONTRACT OR TORT, EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES."
+          }
+        }
+      ],
+      "status": "retried",
+      "problems": [],
+      "first_problems": [
+        "evidence 2: the quote does not appear word for word in P1"
+      ],
+      "passage_ids": [
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::28",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::31",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::42",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::43",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::27"
+      ],
+      "prompt_tokens": 3739,
+      "completion_tokens": 597,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "uncapped_liability",
+      "found": true,
+      "summary": "The agreement states that each party remains fully liable for claims arising from the other party's tortious or grossly negligent acts, meaning the liability cap does not apply in those situations.",
+      "evidence": [
+        {
+          "chunk_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::27",
+          "quote": "Either party shall be solely responsible for, and shall indemnify and hold free and harmless the other party for, any and all claims, damages or lawsuits (including reasonable legal fees) arising from the tortious or grossly negligent acts of the indemnifying party's employees, agents or Contractors.",
+          "span": {
+            "start": 29571,
+            "end": 29872,
+            "text": "Either party shall be solely responsible for, and shall indemnify and hold free and harmless the other party for, any and all claims, damages or lawsuits (including reasonable legal fees) arising from the tortious or grossly negligent acts of the indemnifying party's employees, agents or Contractors."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::27",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::28",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::26",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::31",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::22"
+      ],
+      "prompt_tokens": 1653,
+      "completion_tokens": 307,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "exclusivity",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::27",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::22",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::19",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::32",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::33"
+      ],
+      "prompt_tokens": 1536,
+      "completion_tokens": 71,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "non_compete",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::32",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::19",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::22",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::27",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::3"
+      ],
+      "prompt_tokens": 1622,
+      "completion_tokens": 83,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT",
+      "clause": "anti_assignment",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "failed_validation",
+      "problems": [
+        "evidence 3: the quote does not appear word for word in P2"
+      ],
+      "first_problems": [
+        "evidence 3: the quote does not appear word for word in P2"
+      ],
+      "passage_ids": [
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::32",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::31",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::22",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::33",
+        "OASYSMOBILE,INC_07_05_2001-EX-10.17-OUTSOURCING AGREEMENT::21"
+      ],
+      "prompt_tokens": 3374,
+      "completion_tokens": 593,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "governing_law",
+      "found": true,
+      "summary": "The agreement states that it will be interpreted according to the laws of the State of Kansas.",
+      "evidence": [
+        {
+          "chunk_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::25",
+          "quote": "Section 8.3 This Agreement shall be construed in accordance with the laws of the State of Kansas.",
+          "span": {
+            "start": 22784,
+            "end": 22881,
+            "text": "Section 8.3 This Agreement shall be construed in accordance with the laws of the State of Kansas."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::13",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::25",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::12",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::9",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::14"
+      ],
+      "prompt_tokens": 1755,
+      "completion_tokens": 156,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "termination_for_convenience",
+      "found": true,
+      "summary": "Either the Fund or Integrity may end the agreement without cause by providing the required written notice.",
+      "evidence": [
+        {
+          "chunk_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::23",
+          "quote": "This Agreement is terminable with respect to the Fund, without penalty, (a) on 60 days' written notice, by vote of a majority of the Qualified Trustees or by vote of a majority (as defined in the 1940 Act) of the outstanding voting securities of the Fund or (b) on 90 days' written notice by Integrity.",
+          "span": {
+            "start": 21292,
+            "end": 21594,
+            "text": "This Agreement is terminable with respect to the Fund, without penalty, (a) on 60 days' written notice, by vote of a majority of the Qualified Trustees or by vote of a majority (as defined in the 1940 Act) of the outstanding voting securities of the Fund or (b) on 90 days' written notice by Integrity."
+          }
+        }
+      ],
+      "status": "retried",
+      "problems": [],
+      "first_problems": [
+        "evidence 1: the quote does not appear word for word in P2"
+      ],
+      "passage_ids": [
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::10",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::23",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::20",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::14",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::25"
+      ],
+      "prompt_tokens": 3395,
+      "completion_tokens": 438,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "renewal_term",
+      "found": true,
+      "summary": "The agreement runs until January\u202f18,\u202f2022 and then automatically renews each year on that date, subject to required annual approvals.",
+      "evidence": [
+        {
+          "chunk_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::22",
+          "quote": "This Agreement shall continue until January 18, 2022, and thereafter shall continue automatically for successive annual periods ending on January 18th of each year, provided such continuance is specifically approved at least annually by (a) the Fund's Board of Trustees and (b) a vote of a majority (as defined in the 1940 Act) of the Fund's Trustees who are not interested persons (as defined in the 1940 Act) of the Fund and who have no direct or indirect financial interest in",
+          "span": {
+            "start": 20614,
+            "end": 21093,
+            "text": "This Agreement shall continue until January 18, 2022, and thereafter shall continue automatically for successive annual periods ending on January 18th of each year, provided such continuance is specifically approved at least annually by (a) the Fund's Board of Trustees and (b) a vote of a majority (as defined in the 1940 Act) of the Fund's Trustees who are not interested persons (as defined in the 1940 Act) of the Fund and who have no direct or indirect financial interest in"
+          }
+        }
+      ],
+      "status": "retried",
+      "problems": [],
+      "first_problems": [
+        "evidence 1: the quote does not appear word for word in P1"
+      ],
+      "passage_ids": [
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::22",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::20",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::25",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::23",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::10"
+      ],
+      "prompt_tokens": 3486,
+      "completion_tokens": 526,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "cap_on_liability",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::20",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::13",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::14",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::19",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::10"
+      ],
+      "prompt_tokens": 1621,
+      "completion_tokens": 79,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "uncapped_liability",
+      "found": true,
+      "summary": "The agreement states that the Fund\u2019s indemnity does not apply to liability arising from willful misfeasance, bad faith, or gross negligence, so liability in those situations is not capped.",
+      "evidence": [
+        {
+          "chunk_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::13",
+          "quote": "shall not be deemed to cover any liability to the Fund or its shareholders to which Integrity would otherwise be subject by reason of willful misfeasance, bad faith, or gross negligence in the performance of its duties",
+          "span": {
+            "start": 12673,
+            "end": 12891,
+            "text": "shall not be deemed to cover any liability to the Fund or its shareholders to which Integrity would otherwise be subject by reason of willful misfeasance, bad faith, or gross negligence in the performance of its duties"
+          }
+        },
+        {
+          "chunk_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::13",
+          "quote": "shall not be deemed to cover any claims, demands, liabilities, or expenses arising out of or based upon any statements or representations made by Integrity or its representatives or agents",
+          "span": {
+            "start": 12077,
+            "end": 12265,
+            "text": "shall not be deemed to cover any claims, demands, liabilities, or expenses arising out of or based upon any statements or representations made by Integrity or its representatives or agents"
+          }
+        }
+      ],
+      "status": "retried",
+      "problems": [],
+      "first_problems": [
+        "evidence 2: the quote does not appear word for word in P1"
+      ],
+      "passage_ids": [
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::13",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::14",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::19",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::16",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::12"
+      ],
+      "prompt_tokens": 3897,
+      "completion_tokens": 648,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "exclusivity",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::19",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::14",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::13",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::24",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::4"
+      ],
+      "prompt_tokens": 1632,
+      "completion_tokens": 78,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "non_compete",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::1",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::20",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::13",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::19",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::7"
+      ],
+      "prompt_tokens": 1712,
+      "completion_tokens": 112,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+      "clause": "anti_assignment",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::19",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::20",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::10",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::25",
+        "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement::24"
+      ],
+      "prompt_tokens": 1435,
+      "completion_tokens": 77,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "governing_law",
+      "found": true,
+      "summary": "The contract states that it will be interpreted and governed by the laws of the State of Texas, and Comware agrees to submit to Texas jurisdiction.",
+      "evidence": [
+        {
+          "chunk_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+          "quote": "GOVERNED BY THE STATE OF TEXAS: This Agreement shall be interpreted and governed by the laws of the State of Texas.",
+          "span": {
+            "start": 9989,
+            "end": 10109,
+            "text": "GOVERNED BY THE STATE OF TEXAS: This Agreement shall be interpreted and      governed by the laws of the State of Texas."
+          }
+        },
+        {
+          "chunk_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+          "quote": "Comware agrees to submit to the jurisdiction of the State of Texas, Bexar County, USA.",
+          "span": {
+            "start": 10110,
+            "end": 10201,
+            "text": "Comware agrees to submit to the      jurisdiction of the State of Texas, Bexar County, USA."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::0",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::1",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::6",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::3"
+      ],
+      "prompt_tokens": 1951,
+      "completion_tokens": 230,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "termination_for_convenience",
+      "found": true,
+      "summary": "Either party (ITS or COMWARE) may end the agreement early by giving 30 days written notice for any reason.",
+      "evidence": [
+        {
+          "chunk_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+          "quote": "either ITS or COMWARE shall have the right to terminate this Agreement with 30 days written notice from the other party, for any reason whatsoever.",
+          "span": {
+            "start": 8792,
+            "end": 8944,
+            "text": "either ITS or COMWARE shall have the right to terminate this Agreement with      30 days written notice from the other party, for any reason whatsoever."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::3",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::1",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::4",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::5"
+      ],
+      "prompt_tokens": 1663,
+      "completion_tokens": 201,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "renewal_term",
+      "found": true,
+      "summary": "If COMWARE purchases at least $45,420 during the Initial Distribution Period, the agreement automatically renews for an additional six\u2011month renewal period; otherwise it terminates.",
+      "evidence": [
+        {
+          "chunk_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::3",
+          "quote": "Provided that COMWARE purchases a minimum of $45,420.00 worth of Products, in any combination, during the Initial Distribution Period, this Agreement will automatically renew for an additional 6 months (the Renewal Period).",
+          "span": {
+            "start": 4338,
+            "end": 4590,
+            "text": "Provided  that COMWARE  purchases a minimum of $45,420.00      worth of  Products,  in any  combination,  during the Initial  Distribution\n\n\n\n\n\n     Period,  this Agreement will automatically renew for an additional 6 months      (the Renewal  Period)."
+          }
+        },
+        {
+          "chunk_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::3",
+          "quote": "In the event COMWARE purchases an amount less than $45,420.00, than this Agreement will automatically terminate.",
+          "span": {
+            "start": 4592,
+            "end": 4710,
+            "text": "In the event COMWARE  purchases an amount less than      $45,420.00, than this Agreement will automatically terminate."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::3",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::1",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::4",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::5"
+      ],
+      "prompt_tokens": 1665,
+      "completion_tokens": 244,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "cap_on_liability",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::3",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::1",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::4",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::5"
+      ],
+      "prompt_tokens": 1670,
+      "completion_tokens": 77,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "uncapped_liability",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::5",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::1",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::4",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::3"
+      ],
+      "prompt_tokens": 1679,
+      "completion_tokens": 58,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "exclusivity",
+      "found": true,
+      "summary": "COMWARE is granted an exclusive right to purchase and resell the products during the Initial Distribution Period, meaning it must be the only party allowed to buy and sell those products in that timeframe.",
+      "evidence": [
+        {
+          "chunk_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::1",
+          "quote": "3. EXCLUSIVE RIGHTS: Upon the effective date of this agreement COMWARE shall have the exclusive right to purchase, at the DISCOUNTS described below, and resell Products to potential customers during the Initial Distribution Period, based on the following terms and conditions:",
+          "span": {
+            "start": 1472,
+            "end": 1748,
+            "text": "3. EXCLUSIVE RIGHTS: Upon the effective date of this agreement COMWARE shall have the exclusive right to purchase, at the DISCOUNTS described below, and resell Products to potential customers during the Initial Distribution Period, based on the following terms and conditions:"
+          }
+        },
+        {
+          "chunk_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::0",
+          "quote": "EXCLUSIVE TERRITORIES:      The 48 Contiguous United States",
+          "span": {
+            "start": 1183,
+            "end": 1242,
+            "text": "EXCLUSIVE TERRITORIES:      The 48 Contiguous United States"
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::1",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::4",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::3",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::0"
+      ],
+      "prompt_tokens": 1971,
+      "completion_tokens": 279,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "non_compete",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::3",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::1",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::4",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::5"
+      ],
+      "prompt_tokens": 1669,
+      "completion_tokens": 59,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT",
+      "clause": "anti_assignment",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::7",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::1",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::3",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::0",
+        "OPTIMIZEDTRANSPORTATIONMANAGEMENT,INC_07_26_2000-EX-6.6-DISTRIBUTOR AGREEMENT::4"
+      ],
+      "prompt_tokens": 1960,
+      "completion_tokens": 68,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "governing_law",
+      "found": true,
+      "summary": "The contract states that it will be interpreted according to the laws of the State of Indiana.",
+      "evidence": [
+        {
+          "chunk_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::11",
+          "quote": "This Agreement will be construed in accordance with the laws of the State of Indiana without regard to principles of conflicts of laws.",
+          "span": {
+            "start": 12788,
+            "end": 12923,
+            "text": "This Agreement will be construed in accordance with the laws of the State of Indiana without regard to principles of conflicts of laws."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::14",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::10",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::11",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::12",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::4"
+      ],
+      "prompt_tokens": 1769,
+      "completion_tokens": 150,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "termination_for_convenience",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::9",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::11",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::10",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::12",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::14"
+      ],
+      "prompt_tokens": 1799,
+      "completion_tokens": 72,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "renewal_term",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::9",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::1",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::10",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::14",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::11"
+      ],
+      "prompt_tokens": 1623,
+      "completion_tokens": 52,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "cap_on_liability",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::11",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::10",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::9",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::13",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::14"
+      ],
+      "prompt_tokens": 1691,
+      "completion_tokens": 55,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "uncapped_liability",
+      "found": true,
+      "summary": "The agreement states that the Programmer must indemnify and hold the Licensee harmless for any and all liability arising from the Programmer's actions, without any limitation or cap on that liability.",
+      "evidence": [
+        {
+          "chunk_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::9",
+          "quote": "Programmer shall indemnify and hold Licensee harmless against any and all liability arising from Programmer's use of Licensee's facilities, if any, or from the broadcast of the WLIB Programs on the HD2 Channel, including without limitation for libel, slander, illegal competition or trade practice, infringement of trademarks, trade names, or program titles, violation of rights of privacy, and infringement of copyrights and proprietary rights or any other violation of third party rights or FCC rules or other applicable law.",
+          "span": {
+            "start": 9955,
+            "end": 10482,
+            "text": "Programmer shall indemnify and hold Licensee harmless against any and all liability arising from Programmer's use of Licensee's facilities, if any, or from the broadcast of the WLIB Programs on the HD2 Channel, including without limitation for libel, slander, illegal competition or trade practice, infringement of trademarks, trade names, or program titles, violation of rights of privacy, and infringement of copyrights and proprietary rights or any other violation of third party rights or FCC rules or other applicable law."
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::11",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::9",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::13",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::14",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::10"
+      ],
+      "prompt_tokens": 1700,
+      "completion_tokens": 293,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "exclusivity",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::10",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::11",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::14",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::13",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::4"
+      ],
+      "prompt_tokens": 1670,
+      "completion_tokens": 67,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "non_compete",
+      "found": false,
+      "summary": "",
+      "evidence": [],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::13",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::10",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::9",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::4",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::14"
+      ],
+      "prompt_tokens": 1747,
+      "completion_tokens": 62,
+      "api_calls": 0
+    },
+    {
+      "contract_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement",
+      "clause": "anti_assignment",
+      "found": true,
+      "summary": "The agreement requires the Programmer to obtain the Licensee's prior written consent before assigning the contract.",
+      "evidence": [
+        {
+          "chunk_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::11",
+          "quote": "Programmer may not assign this Agreement without the prior written consent of Licensee, which shall not be unreasonably withheld, conditioned, or delayed.",
+          "span": {
+            "start": 12073,
+            "end": 12227,
+            "text": "Programmer may not assign this Agreement without the prior written consent of Licensee, which shall not be unreasonably withheld, conditioned, or delayed."
+          }
+        },
+        {
+          "chunk_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::11",
+          "quote": "No transfer or assignment shall relieve Programmer of any obligation or liability under this Agreement.",
+          "span": {
+            "start": 12228,
+            "end": 12331,
+            "text": "No transfer or assignment shall relieve Programmer of any obligation or liability under this Agreement."
+          }
+        },
+        {
+          "chunk_id": "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::10",
+          "quote": "it has duly authorized this Agreement, and this Agreement is binding upon it",
+          "span": {
+            "start": 10961,
+            "end": 11037,
+            "text": "it has duly authorized this Agreement, and this Agreement is binding upon it"
+          }
+        }
+      ],
+      "status": "ok",
+      "problems": [],
+      "first_problems": [],
+      "passage_ids": [
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::11",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::13",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::14",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::10",
+        "EmmisCommunicationsCorp_20191125_8-K_EX-10.6_11906433_EX-10.6_Marketing Agreement::5"
+      ],
+      "prompt_tokens": 1557,
+      "completion_tokens": 268,
+      "api_calls": 0
+    }
+  ]
+}

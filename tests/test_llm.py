@@ -109,6 +109,7 @@ def test_a_repeated_call_comes_from_the_cache(tmp_path: Path) -> None:
     assert len(fake.requests) == 1  # the second call never reached the provider
     assert second.cached
     assert second.text == first.text
+    assert second.seconds == 0.0
 
 
 def test_different_messages_are_cached_separately(tmp_path: Path) -> None:

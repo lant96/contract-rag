@@ -121,6 +121,7 @@ class LLMClient:
         if cache_file.exists():
             reply = LLMReply(**json.loads(cache_file.read_text(encoding="utf-8")))
             reply.cached = True
+            reply.seconds = 0.0
             return reply
 
         reply = self.call_with_retries(request)

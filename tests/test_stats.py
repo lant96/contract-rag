@@ -1,4 +1,4 @@
-from contract_rag.stats import bootstrap_difference
+from contract_rag.stats import bootstrap_difference, bootstrap_mean
 
 
 def test_no_difference_gives_a_zero_interval() -> None:
@@ -24,3 +24,11 @@ def test_random_ups_and_downs_include_zero() -> None:
 def test_same_seed_gives_the_same_interval() -> None:
     groups = [[0.5, -0.2], [0.1], [0.3, 0.3], [-0.4]]
     assert bootstrap_difference(groups, seed=1) == bootstrap_difference(groups, seed=1)
+
+
+def test_bootstrap_mean_gives_the_average_and_a_sensible_interval() -> None:
+    groups = [[1.0, 1.0], [0.0], [1.0], [0.0, 0.0]]
+    mean, low, high = bootstrap_mean(groups)
+    assert mean == 0.5
+    assert low < 0.5 < high
+    assert low >= 0.0 and high <= 1.0

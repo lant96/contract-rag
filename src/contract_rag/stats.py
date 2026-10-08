@@ -29,3 +29,12 @@ def bootstrap_difference(groups: list[list[float]], seed: int = 0) -> tuple[floa
     low = means[int(0.025 * N_RESAMPLES)]
     high = means[int(0.975 * N_RESAMPLES) - 1]
     return mean, low, high
+
+
+def bootstrap_mean(groups: list[list[float]], seed: int = 0) -> tuple[float, float, float]:
+    """Average of the numbers in `groups`, with a 95% interval, resampling whole groups.
+
+    The same method as bootstrap_difference. Use this one for a single metric, with one
+    list of values per contract.
+    """
+    return bootstrap_difference(groups, seed)
